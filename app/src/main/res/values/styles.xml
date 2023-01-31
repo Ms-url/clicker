@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main tab -->
+    <style name="TabTextStyle">
+        <item name="android:textSize">@dimen/tabTextSize</item>
+    </style>
+    <!-- item tab -->
+    <style name="itemLabelTextStyle">
+        <item name="android:textSize">@dimen/itemLabelTextSize</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- draw window activity style -->
+    <style name="drawWindowActivityStyle" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimWindow</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+    <!-- 窗口式 activity 进出动画 -->
+    <style name="AnimWindow" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_window_in</item>
+        <item name="android:windowExitAnimation">@anim/push_window_out</item>
+    </style>
+    <!-- pop 进出动画 -->
+    <style name="popWin_anim_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <!--activity 淡入淡出-->
+    <style name="AnimActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="anim_fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_fade_out</item>
+    </style>
+
+    <dimen name="tabTextSize">12sp</dimen>
+    <dimen name="itemLabelTextSize">12sp</dimen>
+    <dimen name="article_item_title">20sp</dimen>
+
+</resources>
