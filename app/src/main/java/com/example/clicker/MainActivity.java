@@ -60,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
     ConstraintLayout constraintLayout;
     private int i;
     private int setting;
-    private static final int acc0_limit = 100;
-    private static final int acc1_limit = 1000;
-    private static final int acc2_limit = 6666;
-    private static final int acc3_limit = 8888;
+    private static final int acc0_limit = 10;
+    private static final int acc1_limit = 100;
+    private static final int acc2_limit = 666;
+    private static final int acc3_limit = 888;
     private static final int[] acc_list = {acc0_limit, acc1_limit, acc2_limit, acc3_limit, 0};
 
     @RequiresApi(api = Build.VERSION_CODES.M)

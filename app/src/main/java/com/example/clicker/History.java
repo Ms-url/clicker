@@ -27,10 +27,10 @@ public class History extends AppCompatActivity {
     ImageView acc_imageView;
     TextView acc_textView;
     TextView textView_click;
-    private static final int acc0_limit = 100;
-    private static final int acc1_limit = 1000;
-    private static final int acc2_limit = 6666;
-    private static final int acc3_limit = 8888;
+    private static final int acc0_limit = 10;
+    private static final int acc1_limit = 100;
+    private static final int acc2_limit = 666;
+    private static final int acc3_limit = 888;
     int[] sdata = {2, 4, 8, 16};
 
     @RequiresApi(api = Build.VERSION_CODES.M)
